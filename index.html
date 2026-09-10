@@ -212,37 +212,60 @@
 <body>
 
     <header>
-        <h1>ADVIK JEWELLERY</h1>
-        <p> 1 Gram GOLD Jewellery </p>
+        <h1>ADVIK JEWELLERS</h1>
+        <p> 1 Gram Jewellery </p>
     </header>
 
     <div class="container">
         <main>
             <div class="products-grid">
                 <div class="product-card">
-                    <div class="product-image-placeholder">[ Gold Necklace Image ]</div>
-                    <h3>Royal Gold Necklace</h3>
-                    <div class="product-price">₹3400 Flat 10% off </div>
+                    <a href="necklace.jpg" target="_blank"><img src="necklace.jpg" alt="Royal Gold Necklace" style="width:100%; height:200px; object-fit:cover;"></a>
+                    <h3>Gold Mangal Sutra</h3>
+                    <div class="product-price">₹3399 Flat 10% off </div>
                     <button class="btn-add" onclick="addToCart('Royal Gold Necklace',3400)">Add to Cart</button>
                 </div>
                 <div class="product-card">
-                    <div class="product-image-placeholder">[ Mangal sutra]</div>
+                    <a href="neacklees set.jpg" target="_blank"><img src="neacklees set.jpg" alt="Necklace set" style="width:100%; height:200px; object-fit:contain;"></a>
                     <h3>Necklace set</h3>
-                    <div class="product-price">₹2700</div>
+                    <div class="product-price">₹2699 flat15%</div>
                     <button class="btn-add" onclick="addToCart('Necklace set', 2700)">Add to Cart</button>
                 </div>
                 <div class="product-card">
-                    <div class="product-image-placeholder">[Kolhapuri saaj]</div>
-                    <h3>Kolhapuri Saaj </h3>
-                    <div class="product-price">₹3400 flat 30% off </div>
+                    <a href="mangal sutra.jpg" target="_blank"><img src="mangal sutra.jpg" alt="mangal sutra" style="width:100%; height:200px; object-fit:contain;"></a>
+                    <h3>Mangal Sutra</h3>
+                    <div class="product-price">₹2400 flat 30% off </div>
                     <button class="btn-add" onclick="addToCart('Traditional Bangles', 34000)">Add to Cart</button>
                 </div>
                 <div class="product-card">
-                    <div class="product-image-placeholder">[ Silver Payal Image ]</div>
-                    <h3>Dimoand stone Neckless </h3>
-                    <div class="product-price">₹5400 Flat off 30% </div>
+                    <a href="dimoand neck.jpg" target="_blank"><img src="dimoand neck.jpg" alt="mangal sutra" style="width:100%; height:200px; object-fit:contain;"></a>
+                    <h3>Dimoand stone Necklace </h3>
+                    <div class="product-price">₹4299 Flat off 30% </div>
                     <button class="btn-add" onclick="addToCart('Royal Gold Necklace', 3060)">Add to Cart</button>
                 </div>
+                 <!-- PRODUCT 5 -->
+                   <div class="product-card">
+                   <a href="ring.jpg" target="_blank"><img src="https://unsplash.com" alt="Gold Ring" style="width:100%; height:200px; object-fit:contain; border-radius:8px;"></a>
+                   <h3>Designer Gold Ring</h3>
+                   <div class="product-price">₹1999 flat 15% off</div>
+                   <button class="btn-add" onclick="addToCart('Designer Gold Ring', 1699)">Add to Cart</button>
+                </div>
+
+                 <!-- PRODUCT 6 -->
+                  <div class="product-card">
+                  <a href="earrings.jpg" target="_blank"><img src="https://unsplash.com" alt="Jhumka Earrings" style="width:100%; height:200px; object-fit:contain; border-radius:8px;"></a>
+                  <h3>Traditional Jhumka</h3>
+                  <div class="product-price">₹1400 flat 20% off</div>
+                  <button class="btn-add" onclick="addToCart('Traditional Jhumka', 2399)">Add to Cart</button>
+               </div>
+
+                 <!-- PRODUCT 7 -->
+                  <div class="product-card">
+                  <a href="payal.jpg" target="_blank"><img src="https://unsplash.com" alt="Silver Payal" style="width:100%; height:200px; object-fit:contain; border-radius:8px;"></a>
+                  <h3>Silver Payal Set</h3>
+                  <div class="product-price">₹1499 flat 10% off</div>
+                  <button class="btn-add" onclick="addToCart('Silver Payal Set', 1349)">Add to Cart</button>
+               </div>
             </div>
         </main>
 
@@ -250,7 +273,8 @@
             <div class="widget-box">
                 <h2>Shopping Cart</h2>
                 <div id="cart-contents">
-                    <p id="cart-empty">Your cart is empty</p>
+                  <p id="cart-empty">Your cart is empty</p>
+                         <button class="btn-whatsapp" onclick="sendToWhatsApp()" style="background-color: #25D366; color: white; padding: 12px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 15px; width: 100%; font-size: 16px;">💬 Send Order via WhatsApp</button>
                 </div>
                 <div id="cart-total" style="display: none; font-weight: bold; margin-top: 10px;"></div>
             </div>
